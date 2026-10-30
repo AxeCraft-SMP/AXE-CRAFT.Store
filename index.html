@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AxeCraft Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">⚔ AXECRAFT</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#ranks">Ranks</a>
+    <a href="#crates">Crates</a>
+    <a href="#cart">Cart 🛒</a>
+    <a href="#server">Server</a>
+    <a href="https://discord.gg/uZcuq4xYef" target="_blank">Discord</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="tag">💎 OFFICIAL MINECRAFT STORE</span>
+    <h1>WELCOME TO<br><span>AXECRAFT STORE</span></h1>
+    <p>Discover exclusive ranks, amazing crates and special rewards.<br>Upgrade your adventure today!</p>
+    <a href="#ranks" class="main-button">EXPLORE STORE →</a>
+  </div>
+</section>
+
+<section class="products-section" id="ranks">
+  <div class="section-heading">
+    <span>👑</span>
+    <h2>SERVER RANKS</h2>
+    <p>Choose your rank and unlock exclusive rewards.</p>
+  </div>
+
+  <div class="products">
+    <article class="product">
+      <div class="product-icon">💎</div>
+      <h3>VIP Rank</h3>
+      <p>Exclusive VIP privileges and rewards.</p>
+      <strong>$7</strong>
+      <button onclick="addToCart('VIP Rank',7)">🛒 Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <div class="product-icon">👑</div>
+      <h3>MVP Rank</h3>
+      <p>Become a special AxeCraft player.</p>
+      <strong>$5</strong>
+      <button onclick="addToCart('MVP Rank',5)">🛒 Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <div class="product-icon">🤝</div>
+      <h3>Friends Rank</h3>
+      <p>A special rank for your friends.</p>
+      <strong>$4</strong>
+      <button onclick="addToCart('Friends Rank',4)">🛒 Add to Cart</button>
+    </article>
+  </div>
+</section>
+
+<section class="products-section" id="crates">
+  <div class="section-heading">
+    <span>📦</span>
+    <h2>CRATES</h2>
+    <p>Discover amazing rewards inside every crate.</p>
+  </div>
+
+  <div class="products">
+    <article class="product">
+      <div class="product-icon">🗳️</div>
+      <h3>Vote Crate</h3>
+      <p>Rewards for supporting the server.</p>
+      <strong>$1</strong>
+      <button onclick="addToCart('Vote Crate',1)">🛒 Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <div class="product-icon">⚙️</div>
+      <h3>Spawner Crate</h3>
+      <p>Special spawner rewards.</p>
+      <strong>$13</strong>
+      <button onclick="addToCart('Spawner Crate',13)">🛒 Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <div class="product-icon">🔮</div>
+      <h3>Crystal Crate</h3>
+      <p>Mysterious crystal rewards.</p>
+      <strong>$10</strong>
+      <button onclick="addToCart('Crystal Crate',10)">🛒 Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <div class="product-icon">🐉</div>
+      <h3>Asura Crate</h3>
+      <p>Powerful and rare rewards.</p>
+      <strong>$15</strong>
+      <button onclick="addToCart('Asura Crate',15)">🛒 Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <div class="product-icon">🎃</div>
+      <h3>Halloween Crate</h3>
+      <p>Spooky seasonal rewards.</p>
+      <strong>$14</strong>
+      <button onclick="addToCart('Halloween Crate',14)">🛒 Add to Cart</button>
+    </article>
+  </div>
+</section>
+
+<section class="cart-section" id="cart">
+  <div class="cart-box">
+    <h2>🛒 YOUR SHOPPING CART</h2>
+    <div id="cart-items">Your cart is empty.</div>
+    <h3>Total: $<span id="total">0</span></h3>
+    <button class="clear-button" onclick="clearCart()">Clear Cart</button>
+    <p class="notice">Online payment is not connected yet.</p>
+  </div>
+</section>
+
+<section class="server-section" id="server">
+  <div class="section-heading">
+    <span>🌐</span>
+    <h2>JOIN AXECRAFT</h2>
+    <p>Choose your edition and join our community.</p>
+  </div>
+
+  <div class="server-cards">
+    <div class="server-card">
+      <h3>🟢 CRACKED JAVA</h3>
+      <p>Server IP</p>
+      <strong>aft.port0.org</strong>
+      <button onclick="copyIP('aft.port0.org',this)">📋 Copy IP</button>
+    </div>
+
+    <div class="server-card">
+      <h3>🔵 PREMIUM JAVA</h3>
+      <p>Original account server IP</p>
+      <strong>IP COMING SOON</strong>
+    </div>
+  </div>
+
+  <a class="discord-button" href="https://discord.gg/uZcuq4xYef" target="_blank">💬 JOIN OUR DISCORD</a>
+</section>
+</main>
+
+<footer>
+  <h3>⚔ AXECRAFT STORE</h3>
+  <p>Made for Minecraft players 💙</p>
+  <p>© 2026 AxeCraft SMP</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
